@@ -13,6 +13,10 @@
 		3D1509142A39B9910095F4B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1509132A39B9910095F4B4 /* Assets.xcassets */; };
 		3D1509172A39B9910095F4B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1509152A39B9910095F4B4 /* LaunchScreen.storyboard */; };
 		3D15091F2A39B9D20095F4B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15091E2A39B9D20095F4B4 /* ViewController.swift */; };
+		3D1509222A39D77F0095F4B4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D1509202A39D77F0095F4B4 /* Model.xcdatamodeld */; };
+		3D1509552A3B0F070095F4B4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1509542A3B0F070095F4B4 /* CoreDataManager.swift */; };
+		3D15095D2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15095B2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift */; };
+		3D15095E2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15095C2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3D1509162A39B9910095F4B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D1509182A39B9910095F4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D15091E2A39B9D20095F4B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D1509212A39D77F0095F4B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3D1509542A3B0F070095F4B4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3D15095B2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListContents+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3D15095C2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListContents+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		3D1508FE2A39B9910095F4B4 = {
 			isa = PBXGroup;
 			children = (
+				3D1509562A3B26870095F4B4 /* ListContentsItem */,
 				3D1509092A39B9910095F4B4 /* TodoList */,
 				3D1509082A39B9910095F4B4 /* Products */,
 			);
@@ -58,13 +67,24 @@
 			children = (
 				3D15090A2A39B9910095F4B4 /* AppDelegate.swift */,
 				3D15090C2A39B9910095F4B4 /* SceneDelegate.swift */,
+				3D15091E2A39B9D20095F4B4 /* ViewController.swift */,
 				3D1509102A39B9910095F4B4 /* Main.storyboard */,
 				3D1509132A39B9910095F4B4 /* Assets.xcassets */,
 				3D1509152A39B9910095F4B4 /* LaunchScreen.storyboard */,
 				3D1509182A39B9910095F4B4 /* Info.plist */,
-				3D15091E2A39B9D20095F4B4 /* ViewController.swift */,
+				3D1509202A39D77F0095F4B4 /* Model.xcdatamodeld */,
+				3D1509542A3B0F070095F4B4 /* CoreDataManager.swift */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		3D1509562A3B26870095F4B4 /* ListContentsItem */ = {
+			isa = PBXGroup;
+			children = (
+				3D15095B2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift */,
+				3D15095C2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift */,
+			);
+			path = ListContentsItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +161,10 @@
 				3D15091F2A39B9D20095F4B4 /* ViewController.swift in Sources */,
 				3D15090B2A39B9910095F4B4 /* AppDelegate.swift in Sources */,
 				3D15090D2A39B9910095F4B4 /* SceneDelegate.swift in Sources */,
+				3D1509222A39D77F0095F4B4 /* Model.xcdatamodeld in Sources */,
+				3D15095E2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift in Sources */,
+				3D15095D2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift in Sources */,
+				3D1509552A3B0F070095F4B4 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +316,6 @@
 				INFOPLIST_FILE = TodoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +343,6 @@
 				INFOPLIST_FILE = TodoList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D1509202A39D77F0095F4B4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D1509212A39D77F0095F4B4 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3D1509212A39D77F0095F4B4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D1508FF2A39B9910095F4B4 /* Project object */;
 }
