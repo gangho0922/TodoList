@@ -17,6 +17,7 @@
 		3D1509552A3B0F070095F4B4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1509542A3B0F070095F4B4 /* CoreDataManager.swift */; };
 		3D15095D2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15095B2A3B2C1B0095F4B4 /* ListContents+CoreDataClass.swift */; };
 		3D15095E2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15095C2A3B2C1B0095F4B4 /* ListContents+CoreDataProperties.swift */; };
+		3D1509612A3D33000095F4B4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1509602A3D33000095F4B4 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1509612A3D33000095F4B4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +105,9 @@
 			dependencies = (
 			);
 			name = TodoList;
+			packageProductDependencies = (
+				3D1509602A3D33000095F4B4 /* SnapKit */,
+			);
 			productName = TodoList;
 			productReference = 3D1509072A39B9910095F4B4 /* TodoList.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 3D1508FE2A39B9910095F4B4;
+			packageReferences = (
+				3D15095F2A3D33000095F4B4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3D1509082A39B9910095F4B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D15095F2A3D33000095F4B4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D1509602A3D33000095F4B4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D15095F2A3D33000095F4B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3D1509202A39D77F0095F4B4 /* Model.xcdatamodeld */ = {
